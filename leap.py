@@ -13,10 +13,11 @@ You are given the year, and you have to write a function to check if the year is
 """
 
 def is_leap(year):
-#checks if the year meets the conditions
-    if year % 4 == 0 and (year % 400 == 0 and year % 100 == 0):
+    #checks if the year meets the conditions
+    if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0):
         return True
     else:
         return False
+    
     
     
